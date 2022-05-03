@@ -2,6 +2,8 @@ import java.util.Iterator;
 
 public class Graph<T> implements GraphInterface<T>{
 
+    private boolean[][] edges;
+    private T[] labels;
   
 /** breadth-first traversal */
 public QueueInterface<T> getBreadthFirstTraversal(T origin)
@@ -66,6 +68,54 @@ public QueueInterface<T> getBreadthFirstTraversal(T origin)
         
         return traversalOrder;
     }  // end getDepthFirstTraversal
+
+    //Add an edge
+    public void addEdge(int source, int target) {
+        edges[source][target] = true;
+    }
+
+    //Test whether an edge exists
+    public boolean isEdge(int source, int target) {
+        return edges[source][target];
+    }
+
+    // Remove an edge
+    public void removeEdge(int source, int target) {
+        edges[source][target] = false;
+    }
+
+    //Obtain a list of neighbors of a specified vertex of this Graph
+    public int[] neighbors(int vertex) {
+        int i;
+        int count = 0;
+        int[] answer;
+        for (i = 0; i < labels.length; i++) {
+            if (edges[vertex][i])
+                count++;
+        }
+        answer = new int[count];
+        count = 0;
+        for (i = 0; i < labels.length; i++) {
+            if (edges[vertex][i])
+                answer[count++] = i;
+        }
+        return answer;
+    }
+
+    //Accessor method to get the label of a vertex of this Graph 
+    public T getLabel(int vertex) {
+        return labels[vertex];
+    }
+
+    //Change the label of a vertex of this Graph
+    public void setLabel(int vertex, T newLabel) {
+        labels[vertex] = newLabel;
+    }
+
+    //Accessor method to determine the number of vertices in this Graph
+    public int size() {
+        return labels.length;
+    }
 
 }
 
