@@ -5,7 +5,7 @@ Rebecca Glatts -
 
 Yvonne Li - Added Interface and Generic Data Type. Added getBreadthFirstTraversal and getDepthFirstTraversal.
 
-Jessica Ortega - 
+Jessica Ortega - added source code
 
 Extra features:
 Link to screencast:
