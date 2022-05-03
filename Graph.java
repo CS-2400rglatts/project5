@@ -69,6 +69,15 @@ public QueueInterface<T> getBreadthFirstTraversal(T origin)
         return traversalOrder;
     }  // end getDepthFirstTraversal
 
+     protected void resetVertices() {
+        Iterator<VertexInterface<T>> vertexIterator = vertices.getValueIterator();
+        while (vertexIterator.hasNext())
+        {
+            VertexInterface<T> nextVertex = VertexIterator.next(); nextVertex.unvisit();
+            nextVertex.setCost(0); nextVertex.setPredecessor(null);
+        } // end while  
+     } // end resetVertices
+    
     //Add an edge
     public void addEdge(int source, int target) {
         edges[source][target] = true;
