@@ -39,7 +39,7 @@ public final class LinkedQueue<T> implements QueueInterface<T>
 	public T getFront(){
 		if(isEmpty()){
 			 System.out.println("Empty Queue Exception");
-       reture null;
+       return null;
        }
 		else
 			return firstNode.getData();
