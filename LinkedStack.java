@@ -1,3 +1,5 @@
+package Y;
+
 
 import java.util.EmptyStackException;
 
@@ -85,5 +87,4 @@ public class LinkedStack<T> implements StackInterface<T> {
             next = nextNode;
         } // end setNextNode
     } // end Node
-
 }

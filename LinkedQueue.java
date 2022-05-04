@@ -1,3 +1,5 @@
+package Y;
+
 public final class LinkedQueue<T> implements QueueInterface<T>
 {
    private Node firstNode; // References node at front of queue
@@ -94,5 +96,3 @@ public final class LinkedQueue<T> implements QueueInterface<T>
 		} // end setNextNode
 	} // end Node
 } // end LinkedQueue
-
-
