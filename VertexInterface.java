@@ -1,4 +1,5 @@
-package GraphPackage;
+package Y;
+
 import java.util.Iterator;
 /**
    An interface for a vertex in a graph.

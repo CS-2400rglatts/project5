@@ -1,3 +1,4 @@
+package Y;
 
 /**
    An interface for the ADT stack.
@@ -30,4 +31,3 @@ public interface StackInterface<T>
 
 
 } // end StackInterface
-
