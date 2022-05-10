@@ -7,5 +7,6 @@ Yvonne Li - Added Interface and Generic Data Type. Added getBreadthFirstTraversa
 
 Jessica Ortega - added source code, helped with junit
 
-Extra features:
-Link to screencast:
+Extra features: junit testing, screencast, graph representation, graph interface and generic data types
+
+Link to screencast: https://www.youtube.com/watch?v=hUnZ2dOSwJE  
