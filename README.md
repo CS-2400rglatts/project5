@@ -10,3 +10,6 @@ Jessica Ortega - added source code, helped with junit
 Extra features: junit testing, screencast, graph representation, graph interface and generic data types
 
 Link to screencast: https://www.youtube.com/watch?v=hUnZ2dOSwJE  
+
+
+We used a linked graph implementation. To run the code, run Driver.java as the main class.
